@@ -1,0 +1,277 @@
+
+/*or other method columns, rows QQ*/
+
+div {
+    width:30px;
+    height:30px;
+    background-color:brown;
+    float:left;
+    border:red solid 0.3px;
+}
+
+#wh {
+    float:clear;
+}
+
+
+.wrapper {
+                display:grid;
+                grid-template-columns:repeat(auto-fit, 5 2fr) /*30px 30px 30px 30px 30px 30px;*/
+                grid-gap:0;
+                background-color: brown;
+                auto
+
+                /*grid-template-columns: 30px; /*30px 30px 30px 30px 30px 30px;*/
+                /*background-color: brown;*/
+                /*border:2px solid red;*/
+            }
+               
+            }
+
+
+            .scale {
+                /*color:yellow;
+                background-color:brown;
+                */
+                
+                height:30px;
+                border:red solid 0.3px;
+                
+
+
+        /*color:yellow;*/
+        /*width:30px;
+        height:30px;*/
+            }
+
+ .scale:hover {
+    /*skew(-0.01turn, 2deg);/*rotateZ(-2deg) ;*/
+    /*transform: rotateZ(-30deg);*/
+     /*transform:rotate(90deg);*/
+     /*transform: translate3d(0, 0, 500px); */
+}
+
+
+            }
+
+
+
+///flexbox
+
+
+            .container {
+                display:flex;
+            }
+
+            .row {
+                width: 200px;
+                float:left;
+                background-color:brown;
+                
+            }
+
+            .column {
+                height:200px;
+                background-color:brown;
+                border: 2px solid red;
+            } 
+
+               .column:hover{
+                transition: 1s;
+                /* works transform: rotateZ(-30deg);*/
+                /*transform:rotate(90deg);*/
+                /*transform: translate3d(0, 0, 500px); */
+                transform: rotateX(10deg) ;
+                background-image:linear-gradient(brown, gold);
+            }
+
+
+
+
+            ////
+
+
+ <!--
+            <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+              
+        
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+ 
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+              
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+              <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+           
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+           
+
+
+           -->
+
+           ///
+
+            ///
+            <div class="container">
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+
+            <div class="row">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+     
+                <div class="row">
+                        <div class="column"></div>
+                        <div class="column"></div>
+                        <div class="column"></div>
+                        <div class="column"></div>
+                        <div class="column"></div>
+                    </div>
+
+                    <div class="row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
+
+                        <div class="row">
+                                <div class="column"></div>
+                                <div class="column"></div>
+                                <div class="column"></div>
+                                <div class="column"></div>
+                                <div class="column"></div>
+                            </div>
+
+    </div>
+
+  
+
+
+    

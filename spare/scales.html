@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            /*or other method columns, rows QQ*/
+            body {
+                background:black;
+               
+            }
+
+            .wrapper {
+                clip-path:circle(250px);
+                display:grid;
+                /*grid-template-columns: 30px; /*30px 30px 30px 30px 30px 30px;*/
+               justify-content:center;
+                /*background-color: brown;*/
+                /*border:2px solid red;*/
+                grid-template-columns: repeat(10, 50px);
+                grid-template-rows: repeat(10, 50px);
+                grid-gap:0.5px;
+            }
+
+            .scale {
+                /*color:yellow;*/
+                
+              
+                /*width:30px;
+                height:30px;*/
+                border:black solid 1px;
+                background:linear-gradient(90deg, brown, red);
+            }
+
+            .desk {
+                background:white;
+            }
+
+            /*
+            div {
+                width:30px;
+                height:30px;
+                background-color:brown;
+                float:left;
+                border:red solid 0.3px;
+            }
+
+            #wh {
+                float:clear;
+            }
+*/
+            .scale:hover{
+                transition: 0.3s;
+                transition-timing-function:ease;
+                /* works transform: rotateZ(-30deg);*/
+                /*transform:rotate(90deg);*/
+                /*transform: translate3d(0, 0, 500px); */
+                transform: rotate3d(1,3,0,0.5rad);/*skew(-0.01turn, 2deg);/*rotateZ(-2deg) ;*/
+                background:linear-gradient(90deg, brown, 80%, darkred);
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+              
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+              
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+              <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+           
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+
+           <div class="scale"> </div>
+           <div class="scale"></div>
+            <div class="scale"></div>
+           <div class="scale"></div>
+           <div class="scale"></div>
+           
+           
+    </div>
+
+   
+        <script>
+
+/*
+div.mouseover(function() {
+console.log("soup");
+div.style.rotate()
+});*/
+
+var scale = document.querySelectorAll(".scale");
+
+//scale.addEventListener("mouseover", rocket())
+
+var body = document.querySelector("body");
+body.addEventListener("keydown",function(e){
+    if(event.keyCode===32) {
+        rocket();
+    }
+});
+
+function rocket() {
+    console.log("how");
+    console.log(scale.length);
+
+for(var i = 0; i<scale.length; i++) {
+    
+    setTimeout(function() {
+        scale[i].classList.add('desk');
+    }, i*2;
+}
+}
+        </script>
+
+        <script src="" async defer></script>
+    </body>
+</html>
